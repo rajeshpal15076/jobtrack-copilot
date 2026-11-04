@@ -124,6 +124,11 @@ For testing browser extension functionality, build the project and load the gene
 
 ```text
 jobtrack-copilot/
+├── screenshots/
+│   ├── popup.png
+│   └── dashboard.png
+│
+├── .gitignore
 │
 ├── public/
 │   ├── icons/
@@ -169,13 +174,11 @@ Users can export their data as CSV or create JSON backups.
 
 **Important:** Clearing browser extension data or uninstalling the extension may remove locally stored records. Users should maintain backups of important application data.
 
-### Privacy Policy
 
 ### Privacy Policy
 
 For details about data storage, permissions, and privacy practices, read the [JobTrack Copilot Privacy Policy](https://rajeshpal15076.github.io/jobtrack-copilot/).
 
-## Publication
 
 ## Publication
 
