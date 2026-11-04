@@ -56,7 +56,7 @@ It is designed with privacy in mind. Application information is stored locally i
 
 JobTrack Copilot is officially published on the Microsoft Edge Add-ons Store.
 
-**[Install JobTrack Copilot]([YOUR_DIRECT_STORE_LISTING_URL](https://microsoftedge.microsoft.com/addons/detail/jobtrack-copilot/mbnebgpfnblojnclnonjhfdjofjmnhel))**
+**[Install JobTrack Copilot]((https://microsoftedge.microsoft.com/addons/detail/jobtrack-copilot/mbnebgpfnblojnclnonjhfdjofjmnhel))**
 
 **Version:** 1.0.0
 
