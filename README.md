@@ -56,11 +56,9 @@ It is designed with privacy in mind. Application information is stored locally i
 
 JobTrack Copilot is officially published on the Microsoft Edge Add-ons Store.
 
-1. Open Microsoft Edge Add-ons.
-2. Search for **JobTrack Copilot**.
-3. Find the extension and select Get.
+**[Install JobTrack Copilot](YOUR_DIRECT_STORE_LISTING_URL)**
 
-**Microsoft Edge Add-ons:** https://microsoftedge.microsoft.com/addons/
+**Version:** 1.0.0
 
 **Store ID:** `0RDCKBRJP7L6`
 
@@ -70,7 +68,7 @@ You can also build and test the extension locally.
 
 **Prerequisites**
 
-- Node.js 20.19+ or 22.12+
+- Node.js 22 or newer (recommended)
 - npm
 - Microsoft Edge
 
@@ -173,17 +171,25 @@ Users can export their data as CSV or create JSON backups.
 
 ### Privacy Policy
 
-Read the complete privacy policy:
+### Privacy Policy
 
-https://rajeshpal15076.github.io/jobtrack-copilot/
+For details about data storage, permissions, and privacy practices, read the [JobTrack Copilot Privacy Policy](https://rajeshpal15076.github.io/jobtrack-copilot/).
 
 ## Publication
 
-**Product:** JobTrack Copilot  
-**Version:** 1.0.0  
-**Platform:** Microsoft Edge Add-ons  
-**Publication status:** Publicly published  
+## Publication
+
+**Product:** JobTrack Copilot
+
+**Version:** 1.0.0
+
+**Platform:** Microsoft Edge Add-ons
+
+**Publication Status:** Publicly published
+
 **Store ID:** `0RDCKBRJP7L6`
+
+**GitHub Release:** [JobTrack Copilot v1.0.0](https://github.com/rajeshpal15076/jobtrack-copilot/releases/tag/v1.0.0)
 
 ## Future Improvements
 
