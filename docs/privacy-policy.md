@@ -60,6 +60,4 @@ For privacy questions or support, contact:
 
 **rajeshpal123.in@gmail.com**
 
----
 
-This policy describes the current JobTrack Copilot version 1.0 implementation. Review it and replace the contact placeholder before making the policy publicly available. If you add analytics, cloud sync, AI services, accounts, or any other data transfer in a future version, update this policy and the Chrome Web Store privacy disclosures before release.
