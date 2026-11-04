@@ -1,0 +1,22 @@
+.popup-body { width: 390px; background: #f5f7fb; }
+.popup-shell { padding: 18px; }
+.brand-row { display: flex; align-items: center; gap: 11px; }
+.brand-mark { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; color: white; background: linear-gradient(135deg, #315efb, #183baf); font-weight: 800; letter-spacing: -1px; }
+.brand-row h1 { font-size: 15px; margin: 0; color: var(--navy); }
+.brand-row p { margin: 3px 0 0; color: var(--muted); font-size: 11px; }
+.form-card { background: white; border: 1px solid var(--line); border-radius: 16px; padding: 17px; margin-top: 17px; box-shadow: 0 8px 24px #172b4d0a; }
+.section-heading { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+.section-heading h2 { font-size: 15px; margin: 0; }
+.privacy-tag { color: #16794b; background: #eaf8f0; padding: 5px 8px; border-radius: 20px; font-size: 10px; font-weight: 650; }
+.form-card label { display: block; font-size: 11px; color: #536078; font-weight: 650; margin: 11px 0; }
+.form-card input, .form-card select, .form-card textarea { display: block; width: 100%; margin-top: 6px; border: 1px solid #dfe4ed; border-radius: 8px; padding: 9px 10px; outline: none; color: #172033; background: #fff; font-size: 12px; }
+.form-card input:focus, .form-card select:focus, .form-card textarea:focus { border-color: #7894ff; box-shadow: 0 0 0 3px #315efb14; }
+.form-card textarea { resize: vertical; }
+.two-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.primary-button { width: 100%; border: 0; border-radius: 9px; background: var(--blue); color: white; font-size: 12px; font-weight: 700; padding: 12px; margin-top: 5px; }
+.primary-button:hover { background: #244de0; }
+.form-message { min-height: 14px; font-size: 11px; margin: 9px 0 0; }
+.form-message.success { color: #16834f; }
+.form-message.error { color: #c0393b; }
+.popup-footer { display: flex; justify-content: space-between; align-items: center; color: var(--muted); font-size: 10px; padding: 14px 2px 2px; }
+.popup-footer a { font-weight: 700; }

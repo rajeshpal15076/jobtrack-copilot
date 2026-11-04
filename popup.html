@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JobTrack Copilot</title>
+  </head>
+  <body class="popup-body">
+    <main class="popup-shell">
+      <header class="brand-row">
+        <div class="brand-mark">JT</div>
+        <div><h1>JobTrack Copilot</h1><p>Keep your job search organized</p></div>
+      </header>
+
+      <form id="job-form" class="form-card">
+        <div class="section-heading">
+          <h2>Save a job</h2>
+          <span class="privacy-tag">Saved locally</span>
+        </div>
+        <label>Job title <input name="jobTitle" required maxlength="120" placeholder="e.g. Junior Software Developer" /></label>
+        <label>Company <input name="company" required maxlength="100" placeholder="e.g. Example Technologies" /></label>
+        <label>Location <input name="location" maxlength="100" placeholder="e.g. Bengaluru / Remote" /></label>
+        <label>Job listing URL <input name="jobUrl" type="url" placeholder="https://www.linkedin.com/jobs/view/..." /></label>
+        <div class="two-columns">
+          <label>Employment type
+            <select name="employmentType">
+              <option value="">Not specified</option><option>Full-time</option><option>Internship</option><option>Contract</option><option>Part-time</option>
+            </select>
+          </label>
+          <label>Status
+            <select name="status">
+              <option value="saved">Saved</option><option value="applied">Applied</option><option value="assessment">Assessment</option><option value="interview">Interview</option><option value="offer">Offer</option>
+            </select>
+          </label>
+        </div>
+        <label>Notes <textarea name="notes" rows="2" maxlength="1000" placeholder="Referral, deadline, skills to prepare..."></textarea></label>
+        <button class="primary-button" type="submit">Save application</button>
+        <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+      </form>
+
+      <footer class="popup-footer">
+        <span id="job-count">0 applications saved</span>
+        <a href="dashboard.html" target="_blank">Open dashboard ↗</a>
+      </footer>
+    </main>
+    <script type="module" src="/src/popup/popup.ts"></script>
+  </body>
+</html>

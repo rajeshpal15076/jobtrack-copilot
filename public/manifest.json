@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "JobTrack Copilot",
+  "version": "1.0.0",
+  "description": "Save and organize job applications with a private local tracker.",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "JobTrack Copilot"
+  },
+  "options_page": "dashboard.html",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
