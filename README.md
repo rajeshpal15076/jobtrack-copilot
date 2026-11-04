@@ -1,73 +1,203 @@
 # JobTrack Copilot
 
-A local-first Chrome extension for saving and organizing job applications. Version 1.0 uses TypeScript, Vite, Chrome Manifest V3, and `chrome.storage.local`. It does not scrape LinkedIn, inject scripts into LinkedIn, use a backend, or transmit application data.
+**A privacy-focused browser extension that helps job seekers organize, track, and manage their job applications.**
 
-## Requirements
+JobTrack Copilot provides a simple way to manage your job search from your browser. Save job opportunities, track application progress, manage follow-ups, and keep your job search organized — without creating an account.
 
-- Node.js 20.19+ or 22.12+ recommended for current Vite releases
+<p align="center">
+  <strong>Version 1.0.0</strong> · <strong>Manifest V3</strong> · <strong>TypeScript</strong>
+</p>
+
+---
+
+## Overview
+
+Managing multiple job applications can become difficult. JobTrack Copilot makes the process easier by providing a centralized, browser-based application tracker.
+
+It is designed with privacy in mind. Application information is stored locally in your browser rather than being sent to a remote application server.
+
+## Features
+
+- **Job Application Tracking:** Add and manage job opportunities in one place.
+- **Application Status Management:** Track the progress of your applications.
+- **Follow-up Management:** Record follow-up dates to stay organized.
+- **Notes:** Maintain useful information about each application.
+- **Search and Filtering:** Find and organize saved applications.
+- **CSV Export:** Export application records for reporting and analysis.
+- **JSON Backup and Restore:** Create backups and restore your saved application data.
+- **Local Data Storage:** Keep your application information in your browser.
+- **No Account Required:** Start using the extension without registration.
+
+## Technology Stack
+
+| Technology | Purpose |
+|---|---|
+| TypeScript | Application logic and type safety |
+| Vite | Build tooling and development |
+| HTML5 | Extension interface |
+| CSS3 | Styling and responsive layouts |
+| Manifest V3 | Browser extension architecture |
+| Browser Storage API | Local application data |
+| Vitest | Automated testing |
+
+## Installation
+
+### Option 1: Install from Microsoft Edge Add-ons
+
+JobTrack Copilot is officially published on the Microsoft Edge Add-ons Store.
+
+1. Open Microsoft Edge Add-ons.
+2. Search for **JobTrack Copilot**.
+3. Find the extension and select Get.
+
+**Microsoft Edge Add-ons:** https://microsoftedge.microsoft.com/addons/
+
+**Store ID:** `0RDCKBRJP7L6`
+
+### Option 2: Run from source code
+
+You can also build and test the extension locally.
+
+**Prerequisites**
+
+- Node.js 20.19+ or 22.12+
 - npm
-- Google Chrome
+- Microsoft Edge
 
-## Install dependencies
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/rajeshpal15076/jobtrack-copilot.git
+```
+
+**2. Navigate to the project directory**
+
+```bash
+cd jobtrack-copilot
+```
+
+**3. Install dependencies**
 
 ```bash
 npm install
 ```
 
-## Build the extension
+**4. Build the extension**
 
 ```bash
 npm run build
 ```
 
-The extension package is generated in `dist/`.
+The production extension files will be generated in the `dist/` directory.
 
-## Load in Chrome
+**5. Load the extension into Microsoft Edge**
 
-1. Open `chrome://extensions`.
-2. Enable **Developer mode**.
-3. Select **Load unpacked**.
-4. Choose this project's `dist` directory.
-5. Pin JobTrack Copilot from the Extensions menu.
-6. Click its icon to add a job.
-7. Click **Open dashboard** to manage applications.
+1. Open `edge://extensions/`.
+2. Enable Developer mode.
+3. Select Load unpacked.
+4. Choose the generated `dist/` directory.
+5. Pin JobTrack Copilot to your browser toolbar.
 
-After changing code, run `npm run build`, then click the reload icon on the extension card in `chrome://extensions`. Refresh the dashboard tab too.
+The extension is now ready for local testing.
 
-## Development
+## Development Commands
 
-```bash
-npm run dev
+| Command | Description |
+|---|---|
+| `npm install` | Install dependencies |
+| `npm run dev` | Start the Vite development server |
+| `npm run build` | Type-check and build the extension |
+| `npm run preview` | Preview the production build |
+| `npm test` | Run automated tests |
+
+For testing browser extension functionality, build the project and load the generated `dist/` folder into Microsoft Edge.
+
+## Project Structure
+
+```text
+jobtrack-copilot/
+│
+├── public/
+│   ├── icons/
+│   └── manifest.json
+│
+├── src/
+│   ├── dashboard/
+│   ├── popup/
+│   ├── services/
+│   ├── styles/
+│   ├── types/
+│   └── utils/
+│
+├── tests/
+│
+├── docs/
+│   ├── index.html
+│   └── privacy-policy.md
+│
+├── dashboard.html
+├── popup.html
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
 ```
 
-The Vite development server is useful for front-end iteration, but the Chrome extension APIs only work when pages are loaded as part of the installed extension. Build and load `dist` to test storage and extension behavior.
+## Privacy and Security
 
-## Tests
+Privacy is an important part of JobTrack Copilot.
 
-```bash
-npm test
-```
+The version 1.0.0 implementation:
 
-## Privacy and data
+- Stores job application data locally using browser storage.
+- Does not require user registration or account creation.
+- Does not use a backend server, analytics service, or external API.
+- Does not transmit job application data to a remote server.
+- Does not scrape LinkedIn pages or automate job applications.
+- Requests only the browser storage permission.
 
-- Job data is stored in the user's Chrome profile through `chrome.storage.local`.
-- There is no account, server, analytics, or external API in this version.
-- Export CSV or download a JSON backup regularly.
-- Removing the extension or clearing its data may delete locally stored records.
-- The extension asks only for the `storage` permission.
+Users can export their data as CSV or create JSON backups.
 
-## Icons
+**Important:** Clearing browser extension data or uninstalling the extension may remove locally stored records. Users should maintain backups of important application data.
 
-The starter package includes simple placeholder PNG icons. Replace them with original branded icons before public release. Keep 16x16, 48x48, and 128x128 PNG versions.
+### Privacy Policy
 
-## Important LinkedIn limitation
+Read the complete privacy policy:
 
-This version intentionally uses manual entry. It does not scrape LinkedIn pages, inject controls into LinkedIn, or automate LinkedIn actions. Users may paste a job listing URL into the form. Review the current LinkedIn terms and Chrome Web Store policies before adding any future integration.
+https://rajeshpal15076.github.io/jobtrack-copilot/
 
-## Before publishing
+## Publication
 
-- Replace placeholder icons with original artwork.
-- Host and link a privacy policy that accurately describes local storage and data handling.
-- Test backup/restore and CSV exports.
-- Review Chrome Web Store developer and user-data policies.
-- Do not claim that the extension is affiliated with LinkedIn.
+**Product:** JobTrack Copilot  
+**Version:** 1.0.0  
+**Platform:** Microsoft Edge Add-ons  
+**Publication status:** Publicly published  
+**Store ID:** `0RDCKBRJP7L6`
+
+## Future Improvements
+
+Potential areas for future development include:
+
+- Improved application analytics and reporting.
+- Additional productivity features.
+- Enhanced user experience and accessibility.
+- More flexible application organization.
+
+Any future feature involving new data collection or external services will require an appropriate privacy and security review.
+
+## Author
+
+**Rajesh Pal**
+
+Web Developer | TypeScript | JavaScript | React
+
+GitHub: https://github.com/rajeshpal15076
+
+Email: rajeshpal123.in@gmail.com
+
+---
+
+**Thank you for using JobTrack Copilot!**
+
+If you encounter an issue or have a feature suggestion, please open an issue in this GitHub repository.
