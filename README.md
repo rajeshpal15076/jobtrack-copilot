@@ -10,6 +10,16 @@ JobTrack Copilot provides a simple way to manage your job search from your brows
 
 ---
 
+## Screenshots
+
+### Extension Popup
+![JobTrack Copilot Popup](screenshots/popup.png)
+
+### Application Dashboard
+![JobTrack Copilot Dashboard](screenshots/dashboard.png)
+
+---
+
 ## Overview
 
 Managing multiple job applications can become difficult. JobTrack Copilot makes the process easier by providing a centralized, browser-based application tracker.
@@ -192,9 +202,9 @@ Any future feature involving new data collection or external services will requi
 
 Web Developer | TypeScript | JavaScript | React
 
-GitHub: https://github.com/rajeshpal15076
+GitHub: [rajeshpal15076](https://github.com/rajeshpal15076)
 
-Email: rajeshpal123.in@gmail.com
+Email: [rajeshpal123.in@gmail.com](mailto:rajeshpal123.in@gmail.com)
 
 ---
 
